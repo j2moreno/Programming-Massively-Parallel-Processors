@@ -1,3 +1,10 @@
+/*
+    To compile and run: 
+
+    nvcc vecAdd.cu -o vecAdd
+    ./vecAdd
+*/
+
 #include <cuda.h>
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
