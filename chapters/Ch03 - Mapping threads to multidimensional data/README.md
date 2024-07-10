@@ -64,3 +64,22 @@ c. What is the number of blocks in the grid? 120
 
 d. What is the number of threads that execute the code on line 05? 45,000
 
+
+4. Consider a 2D matrix with a width of 400 and a height of 500. The matrix is stored as a one-dimensional array. Specify the array index of the matrix element at row 20 and column 10:
+
+a. If the matrix is stored in row-major order. 
+
+row * width + col
+-> 20 * 400 + 10 = 8500
+
+b. If the matrix is stored in column-major order.
+
+col * height + row
+-> 10 * 500 + 20 = 5020
+
+5. Consider a 3D tensor with a width of 400, a height of 500, and a depth of 300. The tensor is stored as a one-dimensional array in row-major order. Specify the array index of the tensor element at x = 10, y = 20, and z = 5.
+
+index = z * (width * height) + y * width + x
+
+5 * (400 * 500) + (20 * 400) + 10 = 1008010
+
