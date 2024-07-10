@@ -1,6 +1,6 @@
 # Excercises
 
-1. In this chapter we implemented a matrix multiplication kernel that has each thread produce one output matrix element. In this question, you will implement different matrix-matrix multiplication kernels and compare them.
+### 1. In this chapter we implemented a matrix multiplication kernel that has each thread produce one output matrix element. In this question, you will implement different matrix-matrix multiplication kernels and compare them.
 
   a. Write a kernel that has each thread produce one output matrix row. Fill in the execution configuration parameters for the design.
 ```C
@@ -50,7 +50,7 @@ void matrixMulti_one_column(float* M, float* N, float* P, int width) {
 ```
 
 
-3. 
+## 3. 
 <img width="571" alt="image" src="https://github.com/j2moreno/Programming-Massively-Parallel-Processors/assets/13912964/4dfc208d-41f0-41b0-8426-386a2527354b">
 
 block dim = (16, 32) 
@@ -65,7 +65,7 @@ c. What is the number of blocks in the grid? 120
 d. What is the number of threads that execute the code on line 05? 45,000
 
 
-4. Consider a 2D matrix with a width of 400 and a height of 500. The matrix is stored as a one-dimensional array. Specify the array index of the matrix element at row 20 and column 10:
+### 4. Consider a 2D matrix with a width of 400 and a height of 500. The matrix is stored as a one-dimensional array. Specify the array index of the matrix element at row 20 and column 10:
 
 a. If the matrix is stored in row-major order. 
 
@@ -77,7 +77,7 @@ b. If the matrix is stored in column-major order.
 col * height + row
 -> 10 * 500 + 20 = 5020
 
-5. Consider a 3D tensor with a width of 400, a height of 500, and a depth of 300. The tensor is stored as a one-dimensional array in row-major order. Specify the array index of the tensor element at x = 10, y = 20, and z = 5.
+### 5. Consider a 3D tensor with a width of 400, a height of 500, and a depth of 300. The tensor is stored as a one-dimensional array in row-major order. Specify the array index of the tensor element at x = 10, y = 20, and z = 5.
 
 index = z * (width * height) + y * width + x
 
