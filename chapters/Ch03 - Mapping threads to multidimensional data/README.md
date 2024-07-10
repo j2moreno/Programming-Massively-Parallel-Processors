@@ -50,7 +50,7 @@ void matrixMulti_one_column(float* M, float* N, float* P, int width) {
 ```
 
 
-## 3. 
+### 3. 
 <img width="571" alt="image" src="https://github.com/j2moreno/Programming-Massively-Parallel-Processors/assets/13912964/4dfc208d-41f0-41b0-8426-386a2527354b">
 
 block dim = (16, 32) 
