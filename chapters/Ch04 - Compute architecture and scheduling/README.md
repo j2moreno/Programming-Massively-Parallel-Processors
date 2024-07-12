@@ -50,10 +50,28 @@ d. For the statement on line 07:
 - ii. How many warps in the grid are divergent?
   - All wrap are divergent 
 - iii. What is the SIMD efficiency (in %) of warp 0 of block 0?
-  - 50%  
-
+  - 50%
+ 
 e. For the loop on line 09:
 - i. How many iterations have no divergence?
   - 1/3 
 - ii. How many iterations have divergence?
   - 2/3 
+
+### 2. For a vector addition, assume that the vector length is 2000, each thread calculates one output element, and the thread block size is 512 threads. How many threads will be in the grid?
+
+vector length = 2000
+threads per block = 512
+
+2000 / 512 ~ 4 blocks to cover length 
+
+512 * 4 = 2048 threads in the grid 
+
+### 3. For the previous question, how many warps do you expect to have divergence due to the boundary check on vector length?
+
+2000 / 32 ~ 63 wraps
+
+Threads 2000-2017 will be out of bounds 
+
+Wraps 62 & 63 will be divergent 
+
